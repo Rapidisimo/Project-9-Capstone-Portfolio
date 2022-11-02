@@ -1,0 +1,107 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+main {
+    padding: 0 .6rem;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+}
+h4 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin: .6rem 0 .2rem 0;
+}
+
+header {
+    padding: 1.8rem .4rem;
+    margin: 0 -4rem 2rem -4rem;
+    text-align: center;
+    background-color: #83b5e9;
+}
+
+header h1 {
+    font-size: 1.6rem;
+    line-height: 1.5rem;
+    color: white;
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    padding: 0 0 1rem 0;
+}
+
+.profile-photo {
+    shape-outside: circle(45%);
+    border-radius: 50%;
+    max-width: 10rem;
+    padding: .4rem;
+    float: left;
+}
+
+.intro {
+    text-align: center;
+    padding: .4rem;
+}
+
+.intro h3 {
+    margin: .6rem;
+}
+.intro a {
+    font-size: 1.3em;
+}
+
+.underlined {
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: #86bdec;
+    text-decoration-thickness: 1px;
+    color: black;
+  }
+  a:hover {
+    text-decoration-color: #df8a62;
+  }
+  
+  .projects {
+    margin-top: 1rem;
+  }
+
+  .project {
+    margin-top: 1rem;
+  }
+  .project h3 {
+    padding: .4rem .4rem .4rem .2rem;
+  }
+
+  .project-pic-sm {
+    max-width: 100%;
+    border: 2px solid rgb(194, 211, 229);
+    border-radius: 5px;
+  }
+
+  figcaption {
+    font-size: .9rem;
+  }
+
+  .project-description {
+    margin-top: .6rem;
+    padding: 0 .2rem;
+  }
+
+  .github-source {
+    text-align: right;
+    padding: .4rem;
+  }
