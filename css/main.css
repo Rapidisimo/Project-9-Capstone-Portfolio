@@ -7,6 +7,7 @@ body {
 
 main {
     padding: 0 .6rem;
+    margin-bottom: 1.4rem;
 }
 
 h1,
@@ -107,4 +108,22 @@ header h1 {
     text-align: right;
     padding: .4rem;
     margin-bottom: .8rem;
+  }
+
+  .contact-info {
+    margin: 1rem auto;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .contact-info li {
+    padding: .4rem;
+  }
+  .contact-info a {
+    text-decoration: none;
+  }
+
+  ul {
+    margin: 0;
   }
