@@ -110,12 +110,17 @@ header h1 {
     margin-bottom: .8rem;
   }
 
+  .contact h2 {
+    text-align: center;
+  }
+
   .contact-info {
     margin: 1rem auto;
     list-style: none;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    place-items: center;
   }
   .contact-info li {
     padding: .4rem;
@@ -126,4 +131,12 @@ header h1 {
 
   ul {
     margin: 0;
+  }
+
+  svg {
+    margin: 0 auto;
+  }
+
+  .other-work {
+    margin-bottom: 1.2rem;
   }
