@@ -110,7 +110,8 @@ header h1 {
     margin-bottom: .8rem;
   }
 
-  .contact h2 {
+  .contact h2,
+  .contact h3 {
     text-align: center;
   }
 
@@ -122,21 +123,102 @@ header h1 {
     grid-template-rows: 1fr 1fr;
     place-items: center;
   }
-  .contact-info li {
+  
+.contact-info li {
     padding: .4rem;
   }
-  .contact-info a {
+
+.contact-info a {
     text-decoration: none;
   }
 
-  ul {
+ul {
     margin: 0;
   }
 
-  svg {
+svg {
     margin: 0 auto;
   }
 
-  .other-work {
+.other-work {
     margin-bottom: 1.2rem;
   }
+
+.message-form {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    padding: 1rem;
+}
+
+textarea {
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: .4rem;
+}
+
+.button-send {
+	background-color: rgb(205, 227, 250);
+	color: rgb(0, 0, 0);
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid rgb(114, 126, 138);
+}
+
+footer {
+    margin-top: 1rem;
+    text-align: center;
+}
+footer h3 {
+    padding: 1rem;
+}
+footer p {
+    font-size: .8rem;
+}
+
+@media (min-width: 768px) {
+    .projects {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    .section-heading {
+        grid-column: 1 / span 2;
+    }
+    .project:nth-last-of-type(1) {
+        grid-column: 1 / span 2;
+      }
+      .project:nth-last-of-type(1) img {
+        max-width: 50%;
+        margin: 0 auto;
+      }
+    header h1 {
+        font-size: 2rem;
+    }
+    .intro {
+        display: grid;
+        grid-template-columns: 25% 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .intro img {
+        grid-row: 1 / span 2;
+        place-self: center;
+    }
+    .intro h2 {
+        font-size: 1.8rem;
+        place-self: center;
+    }
+    .intro p {
+        font-size: 1.2rem;
+    }
+    .intro h4 {
+        grid-column: 2 / 2;
+        place-self: center;
+    }
+    .section-heading {
+        font-size: 1.8rem;
+    }
+    .project-name {
+        font-size: 1.4rem;
+    }
+}

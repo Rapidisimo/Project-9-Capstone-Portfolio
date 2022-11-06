@@ -14,7 +14,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Oswald:wght@300;400&display=swap" rel="stylesheet">      </head>
     <body>
-    <main>
+    <main id="top">
         <header>
             <h1>Josu&eacute; Rodriguez | Front-End Developer</h1>
         </header>
@@ -22,12 +22,12 @@
             <img src="img/profile-sm.jpg" alt="Photo of Josue" class="profile-photo">
             <h2 class="title">Creatively coding websites</h2>
             <p>Hello! I'm Josu&eacute; Rodriguez, a front-end developer. I love to approach things with both creativity and logic, but most of all, with an open mind.</p>
-            <!-- <h3><a class="underlined" href="#contact">Let's connect!</a></h3> -->
+            <h4><a class="underlined" href="#contact">Let's connect!</a></h4>
         </section>
         <section class="projects">
-            <h2>My Five Recent Projects</h2>
+            <h2 class="section-heading">My Five Recent Projects</h2>
             <div class="project">
-                <h3><a href="https://rapidisimo.github.io/Project-7-Dashboard/" target="_blank" class="underlined">Interactive Dashboard</a></h3>
+                <h3 class="project-name"><a href="https://rapidisimo.github.io/Project-7-Dashboard/" target="_blank" class="underlined">Interactive Dashboard</a></h3>
                 <figure>
                     <a href="https://rapidisimo.github.io/Project-7-Dashboard/" target="_blank"><img src="img/project-7.jpg" alt="website screenshot" class="project-pic-sm"></a>
                     <figcaption>Click image for live version</figcaption>
@@ -39,7 +39,7 @@
                 <p class="github-source"><a class="underlined" href="https://github.com/Rapidisimo/Project-7-Dashboard" target="_blank">View Project on GitHub >></a></p>
             </div>
             <div class="project">
-                <h3><a href="https://rapidisimo.github.io/Project-6-GameShowApp/" target="_blank" class="underlined">Gameshow App</a></h3>
+                <h3 class="project-name"><a href="https://rapidisimo.github.io/Project-6-GameShowApp/" target="_blank" class="underlined">Gameshow App</a></h3>
                 <figure>
                     <a href="https://rapidisimo.github.io/Project-6-GameShowApp/" target="_blank"><img src="img/project-6.jpg" alt="website screenshot" class="project-pic-sm"></a>
                     <figcaption>Click image for live version</figcaption>
@@ -51,7 +51,7 @@
                 <p class="github-source"><a class="underlined" href="https://github.com/Rapidisimo/Project-6-GameShowApp" target="_blank">View Project on GitHub >></a></p>
             </div>
             <div class="project">
-                <h3><a href="https://rapidisimo.github.io/Project-8-Employee-Directory/" target="_blank" class="underlined">API Based Employee Directory</a></h3>
+                <h3 class="project-name"><a href="https://rapidisimo.github.io/Project-8-Employee-Directory/" target="_blank" class="underlined">API Based Employee Directory</a></h3>
                 <figure>
                     <a href="https://rapidisimo.github.io/Project-8-Employee-Directory/" target="_blank"><img src="img/project-8.jpg" alt="website screenshot" class="project-pic-sm"></a>
                     <figcaption>Click image for live version</figcaption>
@@ -63,7 +63,7 @@
                 <p class="github-source"><a class="underlined" href="https://github.com/Rapidisimo/Project-8-Employee-Directory" target="_blank">View Project on GitHub >></a></p>
             </div>
             <div class="project">
-                <h3><a href="https://rapidisimo.github.io/Project-5-Photo-Gallery/" target="_blank" class="underlined">Photo Gallery</a></h3>
+                <h3 class="project-name"><a href="https://rapidisimo.github.io/Project-5-Photo-Gallery/" target="_blank" class="underlined">Photo Gallery</a></h3>
                 <figure>
                     <a href="https://rapidisimo.github.io/Project-5-Photo-Gallery/" target="_blank"><img src="img/project-5.jpg" alt="website screenshot" class="project-pic-sm"></a>
                     <figcaption>Click image for live version</figcaption>
@@ -75,7 +75,7 @@
                 <p class="github-source"><a class="underlined" href="https://github.com/Rapidisimo/Project-5-Photo-Gallery" target="_blank">View Project on GitHub >></a></p>
             </div>
             <div class="project">
-                <h3><a href="https://foodtechlife.com" target="_blank" class="underlined">Food Tech Life</a></h3>
+                <h3 class="project-name"><a href="https://foodtechlife.com" target="_blank" class="underlined">Food Tech Life</a></h3>
                 <figure>
                     <a href="https://foodtechlife.com" target="_blank"><img src="img/FTL.jpg" alt="website screenshot" class="project-pic-sm"></a>
                     <figcaption>Click image for live version</figcaption>
@@ -99,7 +99,7 @@
                 <figcaption>Click image to view video</figcaption>
             </figure>
         </section>
-        <section class="contact">
+        <section class="contact" id="contact">
             <h2>Contact Me</h2>
             <ul class="contact-info">
                 <li class="mail"><a href="mailto:hello@josue.me">
@@ -133,8 +133,19 @@
                         <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
                     </svg>
                     Instagram</a></li>
-              </ul>      
+            </ul>
+            <section class="message">
+                <h3>Message Me</h3>
+                <form name="contact" class="message-form" method="post" data-netlify="true" autocomplete="off">
+                    <textarea class="form-area" name="msg-area" id="user-msg" cols="26" rows="5" placeholder="Message me"></textarea>
+                    <button type="submit" class="button-send">SEND</button>
+                </form>
+            </section>       
         </section>
+        <footer>
+            <h3><a class="underlined" href="#top">Back to Top</a></h3>
+            <p>&copy; 2022 Josu&eacute; Rodriguez.</p>
+          </footer>    
     </main>
 </body>
 </html>
