@@ -225,8 +225,48 @@ footer p {
     .project-name {
         font-size: 1.4rem;
     }
+    .other-work {
+        text-align: center;
+        line-height: 1.7;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    .other-work h2 {
+        grid-column: 1 / span 2;
+    }
+    .other-work figure img {
+        display: inline-block;
+    }
+    .contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .contact h2 {
+        grid-column: 1 / span 2;
+    }
+
 }
 
 @media (min-width: 1024px) {
-    
+    main {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+    .intro p {
+        font-size: 1.4rem;
+    }
+    .intro h4 {
+        font-size: 1.4rem;
+    }
+    .project {
+        display: grid;
+    }
+    .project-pic:hover {
+        opacity: .8;
+    }
+    .github-source {
+        font-weight: 600;
+        align-self: end;
+    }
 }
