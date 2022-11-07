@@ -49,6 +49,7 @@ header h1 {
     shape-outside: circle(45%);
     border-radius: 50%;
     max-width: 10rem;
+    margin-right: .6rem;
     padding: .4rem;
     float: left;
 }
