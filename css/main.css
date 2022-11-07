@@ -88,10 +88,14 @@ header h1 {
     padding: .4rem .4rem .4rem .2rem;
   }
 
-  .project-pic-sm {
+  .project-pic {
     max-width: 100%;
     border: 2px solid rgb(194, 211, 229);
     border-radius: 5px;
+    display: block;
+  }
+  .project-pic-lg {
+    visibility: hidden;
   }
 
   figcaption {
@@ -221,4 +225,8 @@ footer p {
     .project-name {
         font-size: 1.4rem;
     }
+}
+
+@media (min-width: 1024px) {
+    
 }
