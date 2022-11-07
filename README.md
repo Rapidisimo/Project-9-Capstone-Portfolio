@@ -10,7 +10,7 @@
 5. Add one JavaScript interactivity
 6. Publish/Host on GitHub Pages
 
-➡️ [Pending Live Version](https://github.com/Rapidisimo/)
+➡️ [Live Version](https://rapidisimo.github.io/Project-9-Capstone-Portfolio/)
 
 ## Extras added:
 
