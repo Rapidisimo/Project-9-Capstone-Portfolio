@@ -65,7 +65,12 @@ header h1 {
 .intro a {
     font-size: 1.3em;
 }
-
+a {
+    text-decoration: none;
+}
+a:visited {
+    color: black;
+}
 .underlined {
     text-decoration: underline;
     text-decoration-style: wavy;
@@ -75,10 +80,23 @@ header h1 {
   }
   a:hover {
     text-decoration-color: #df8a62;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 1px;
+
+  }
+
+.section-heading {
+      margin: 2rem 0;
   }
   
+.section-heading,
+.project-name {
+    text-align: center;
+}
+
   .projects {
-    margin-top: 1rem;
+    margin-top: 4rem;
   }
 
   .project {
@@ -90,13 +108,10 @@ header h1 {
   }
 
   .project-pic {
-    max-width: 100%;
+    width: 100%;
     border: 2px solid rgb(194, 211, 229);
     border-radius: 5px;
     display: block;
-  }
-  .project-pic-lg {
-    visibility: hidden;
   }
 
   figcaption {
@@ -105,14 +120,33 @@ header h1 {
   }
 
   .project-description {
-    margin-top: .6rem;
-    padding: 0 .2rem;
+    margin: .6rem;
+    /* padding: 0 .2rem; */
   }
 
   .github-source {
-    text-align: right;
     padding: .4rem;
-    margin-bottom: .8rem;
+    margin: 1.4rem 0;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+  }
+  .github-source a {
+    color: white;
+    font-weight: 700;
+    background-color: #86bdec;
+    border-radius: 5px;
+    padding: .4rem .6rem;
+    flex-grow: 1;
+  }
+  .github-source a:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #5d84a6;
+  }
+  .project-description,
+  .github-source {
+    text-align: center;
   }
 
   .contact h2,
@@ -147,7 +181,12 @@ svg {
 
 .other-work {
     margin-bottom: 1.2rem;
+    text-align: center;
   }
+.other-work h3,
+.other-work p {
+    margin: .4rem 0;
+}
 
 .message-form {
     display: flex;
@@ -181,23 +220,39 @@ footer p {
     font-size: .8rem;
 }
 
+br {
+    margin: 1rem 0;
+}
+
 @media (min-width: 768px) {
-    .projects {
+
+    .project {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 1rem;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "left-1 right"
+        "left-2 right"
+        "left-3 right"
+        ;
     }
-    .section-heading {
-        grid-column: 1 / span 2;
+    .project-name {
+        grid-area: left-1;
+        text-align: left;
     }
-    .project:nth-last-of-type(1) {
-        grid-column: 1 / span 2;
-      }
-      .project:nth-last-of-type(1) img {
-        max-width: 50%;
-        margin: 0 auto;
-      }
-    header h1 {
+    .project-description {
+        grid-area: left-2;
+        text-align: left;
+    }
+    .github-source {
+        grid-area: left-3;
+        align-self: center;
+        
+    }
+    .project-preview {
+        grid-area: right;
+    }
+        header h1 {
         font-size: 2rem;
     }
     .intro {
@@ -226,6 +281,7 @@ footer p {
     .project-name {
         font-size: 1.4rem;
     }
+
     .other-work {
         text-align: center;
         line-height: 1.7;
@@ -247,9 +303,28 @@ footer p {
         grid-column: 1 / span 2;
     }
 
+
+    /* .projects {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    .section-heading {
+        grid-column: 1 / span 2;
+    }
+    .project:nth-last-of-type(1) {
+        grid-column: 1 / span 2;
+      }
+      .project:nth-last-of-type(1) img {
+        max-width: 50%;
+        margin: 0 auto;
+      }
+
+ */
+
 }
 
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
     main {
         max-width: 1024px;
         margin: 0 auto;
@@ -267,7 +342,7 @@ footer p {
         opacity: .8;
     }
     .github-source {
-        font-weight: 600;
+        font-weight: 700;
         align-self: end;
     }
-}
+} */
