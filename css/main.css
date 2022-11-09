@@ -124,14 +124,14 @@ a:visited {
     /* padding: 0 .2rem; */
   }
 
-  .github-source {
+  .project-source {
     padding: .4rem;
     margin: 1.4rem 0;
     display: flex;
     justify-content: space-evenly;
     gap: 1rem;
   }
-  .github-source a {
+  .project-source a {
     color: white;
     font-weight: 700;
     background-color: #86bdec;
@@ -139,13 +139,13 @@ a:visited {
     padding: .4rem .6rem;
     flex-grow: 1;
   }
-  .github-source a:hover {
+  .project-source a:hover {
     text-decoration: none;
     color: white;
     background-color: #5d84a6;
   }
   .project-description,
-  .github-source {
+  .project-source {
     text-align: center;
   }
 
@@ -224,6 +224,41 @@ br {
     margin: 1rem 0;
 }
 
+.project {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "row1"
+    "row2"
+    "row3"
+    "row4"
+    ;
+}
+.project-name {
+    grid-area: row1;
+    text-align: center;
+}
+.project-description {
+    grid-area: row2;
+    text-align: center;
+}
+.project-source {
+    grid-area: row4;
+    align-self: end;
+    
+}
+.project-preview {
+    grid-area: row3;
+    place-self: center;
+    margin-left: 1.4rem;
+    margin-bottom: 1.4rem;
+}
+
+.photography {
+    margin-top: 1.4rem;
+}
+
 @media (min-width: 768px) {
 
     .project {
@@ -244,13 +279,16 @@ br {
         grid-area: left-2;
         text-align: left;
     }
-    .github-source {
+    .project-source {
         grid-area: left-3;
-        align-self: center;
+        align-self: end;
         
     }
     .project-preview {
         grid-area: right;
+        place-self: center;
+        margin-left: 1.4rem;
+        margin-bottom: 1.4rem;
     }
         header h1 {
         font-size: 2rem;
@@ -324,7 +362,7 @@ br {
 
 }
 
-/* @media (min-width: 1024px) {
+@media (min-width: 1024px) {
     main {
         max-width: 1024px;
         margin: 0 auto;
@@ -335,14 +373,14 @@ br {
     .intro h4 {
         font-size: 1.4rem;
     }
-    .project {
+    /* .project {
         display: grid;
-    }
+    } */
     .project-pic:hover {
         opacity: .8;
     }
-    .github-source {
+    /* .project-source {
         font-weight: 700;
         align-self: end;
-    }
-} */
+    } */
+}
