@@ -25,7 +25,6 @@ h4 {
 
 header {
     padding: 1.8rem .4rem;
-    margin: 0 -4rem 2rem -4rem;
     text-align: center;
     background-color: #83b5e9;
 }
@@ -251,8 +250,7 @@ br {
 .project-preview {
     grid-area: row3;
     place-self: center;
-    margin-left: 1.4rem;
-    margin-bottom: 1.4rem;
+    margin: 0 .4rem 1.4rem .4rem;
 }
 
 .photography {
@@ -340,26 +338,9 @@ br {
     .contact h2 {
         grid-column: 1 / span 2;
     }
-
-
-    /* .projects {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
+    .project-pic:hover {
+        opacity: .8;
     }
-    .section-heading {
-        grid-column: 1 / span 2;
-    }
-    .project:nth-last-of-type(1) {
-        grid-column: 1 / span 2;
-      }
-      .project:nth-last-of-type(1) img {
-        max-width: 50%;
-        margin: 0 auto;
-      }
-
- */
-
 }
 
 @media (min-width: 1024px) {
@@ -373,14 +354,4 @@ br {
     .intro h4 {
         font-size: 1.4rem;
     }
-    /* .project {
-        display: grid;
-    } */
-    .project-pic:hover {
-        opacity: .8;
-    }
-    /* .project-source {
-        font-weight: 700;
-        align-self: end;
-    } */
 }
