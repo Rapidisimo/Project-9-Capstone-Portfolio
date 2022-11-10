@@ -5,6 +5,38 @@ body {
     line-height: 1.5;
 }
 
+/* Dark Mode */
+.darkmode {
+    background-color: #353D44;
+    color: #fdfdfd;
+}
+.darkmode h1,
+.darkmode h2,
+.darkmode h3,
+.darkmode h4 {
+    color: #fdfdfd;
+}
+.darkmode a {
+    color: #fdfdfd;
+}
+.darkmode a:visited {
+    color: #fdfdfd;
+}
+.darkmode .project-source a {
+    background-color: rgb(85, 116, 148);
+}
+.darkmode svg {
+    fill: #fdfdfd;
+}
+.darkmode header {
+    background-color: rgb(85, 116, 148);
+}
+.darkmode .project-pic {
+    filter: brightness(0.90);
+}
+/* End Dark Mode */
+
+
 main {
     padding: 0 .6rem;
     margin-bottom: 1.4rem;
