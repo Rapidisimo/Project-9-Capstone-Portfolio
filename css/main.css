@@ -5,6 +5,12 @@ body {
     line-height: 1.5;
 }
 
+header svg {
+    color: #353D44;
+    fill: #fdfdfd;
+    cursor: pointer;
+}
+
 /* Dark Mode */
 .darkmode {
     background-color: #353D44;
@@ -34,6 +40,12 @@ body {
 .darkmode .project-pic {
     filter: brightness(0.90);
 }
+
+.darkmode header svg {
+    color: #eee87c;
+    fill: #feef88;
+    cursor: pointer;
+}
 /* End Dark Mode */
 
 
@@ -56,9 +68,12 @@ h4 {
 }
 
 header {
-    padding: 1.8rem .4rem;
+    padding: 1rem .4rem;
     text-align: center;
     background-color: #83b5e9;
+}
+header aside {
+    margin-top: 1rem;
 }
 
 header h1 {
@@ -290,6 +305,12 @@ br {
 }
 
 @media (min-width: 768px) {
+    
+    header {
+        display: grid;
+        grid-template-columns: 95% 1fr;
+        place-items: center;
+    }
 
     .project {
         display: grid;
