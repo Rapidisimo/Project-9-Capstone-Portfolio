@@ -13,6 +13,9 @@
 ➡️ [Live Version](https://rapidisimo.github.io/Project-9-Capstone-Portfolio/)
 
 ## Extras added:
-
+1. Added an extra project
+2. Added an extra JavaScript interactivity (a: Smooth Scrolling and b: Dark Mode)
 
 ### Other
+
+This project will serve as my website on [Josue.me](https://josue.me)
