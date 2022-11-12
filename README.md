@@ -10,9 +10,7 @@
 5. Add one JavaScript interactivity
 6. Publish/Host on GitHub Pages
 
-➡️ [Live GitHub Version](https://rapidisimo.github.io/Project-9-Capstone-Portfolio/)
-
-➡️ It can also be viewed at [Josue.me](https://josue.me) 🎉
+➡️ It can be viewed at [Josue.me](https://josue.me) 🎉
 
 ## Extras added:
 1. Added an extra project
