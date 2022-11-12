@@ -6,7 +6,7 @@ const siteBody = document.querySelector('body');
 
 connect.addEventListener('click', e => {
     e.preventDefault();
-    document.querySelector('.mail a').focus();
+    document.querySelector('.email a').focus();
     document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
 });
 
